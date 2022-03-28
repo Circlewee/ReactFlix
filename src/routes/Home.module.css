@@ -1,0 +1,27 @@
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.movie__loading {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  border: 3px solid red;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: 0.8s loading linear infinite;
+}
+
+.home__grid__container {
+  display: grid;
+  padding-top: 180px;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
